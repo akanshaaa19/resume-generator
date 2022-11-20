@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+
+body{
+  background-color: #141414 !important;
+  color: #fff !important;
+  font-family: 'Nunito Sans', sans-serif;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  color: inherit !important;
+  text-decoration: none !important;
+  display: block;
+  padding: 0.8rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input:focus, textarea:focus{
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.resume-div{
+  overflow-y: scroll;
+  /* overflow-x: hidden; */
+  height: 90vh;
+  width: 50vw;
+}
+
+.home{
+  width: calc(100% - 15vw)
+}
+
+.home{
+  height: calc(100% - 12vh);
+}
+
+.question-div{
+  width: 25vw;
+}
+
+.form-content{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 50vh;
+  width: 25vw;
+  overflow: auto;
+
 }
 
-.App-link {
-  color: #61dafb;
+.auth button{
+  width: 10vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #242424;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #191A19;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
 }

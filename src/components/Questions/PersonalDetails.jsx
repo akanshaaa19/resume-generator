@@ -9,7 +9,6 @@ import AuthContext from "../../store/auth-context";
 
 function PersonalDetails() {
 
-  const [isFilled, setIsFilled] = useState(false)
 
   const nameRef = useRef();
   const posRef = useRef();
@@ -42,8 +41,6 @@ function PersonalDetails() {
       });
     // }
 
-    ctx.setDetails("per");
-    setIsFilled(true)
     history.replace("/edit/education");
   }
 

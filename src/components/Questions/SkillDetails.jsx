@@ -58,13 +58,13 @@ function SkillDetails() {
         {/* {ctx.isSkillFilled && <p>You have alredy filled this</p>} */}
 
         <div className="btn-div pt-5 flex flex-row justify-end">
-          <button className="px-4 py-2 mx-1 bg-indigo-500" disabled>
+          <button className="px-4 py-2 mx-1 bg-indigo-500" onClick={()=>{history.replace("/edit/work")}}>
             Previous
           </button>
           <button
             onClick={sendData}
-            className="px-4 py-2 mx-1 ml-16 bg-indigo-500"
-            type="submit"
+            className="px-4 py-2 mx-1 ml-16 bg-indigo-300"
+            type="submit" disabled
           >
             Next
           </button>

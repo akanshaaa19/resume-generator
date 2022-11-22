@@ -43,7 +43,6 @@ function WorkDetails() {
       });
     // }
 
-    ctx.setDetails("work");
     history.replace("/edit/skills");
   }
 
@@ -94,10 +93,9 @@ function WorkDetails() {
         <div className="btn-div pt-5 flex flex-row justify-end">
           <button
             onClick={() => {
-              history.replace("/edit/skills");
+              history.replace("/edit/education");
             }}
             className="px-4 py-2 mx-1 bg-indigo-500"
-            disabled
           >
             Previous
           </button>

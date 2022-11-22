@@ -27,7 +27,7 @@ function EducationDetails() {
     const email = localStorage.getItem("email");
     const docRef = doc(db, "users", email);
 
-    // if (!ctx.isEducationFilled) {
+    // // if (!ctx.isEducationFilled) {
       const edu1 = {
         degree: degree1Ref.current.value,
         school: school1Ref.current.value,
@@ -46,7 +46,7 @@ function EducationDetails() {
       });
     // }
 
-    ctx.setDetails("edu");
+    // ctx.setDetails("edu");
     history.replace("/edit/work");
   }
 
@@ -108,7 +108,7 @@ function EducationDetails() {
           <div className="btn-div pt-5 flex flex-row justify-end">
             <button
               onClick={() => {
-                history.replace("/personal");
+                history.replace("/edit/personal");
               }}
               className="px-4 py-2 mx-1 bg-indigo-500"
             >

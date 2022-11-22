@@ -101,7 +101,7 @@ function AuthForm() {
         {!isLogin && (
           <input
             autoComplete="false"
-            className="bg-transparent py-2 px-2 my-2 border border-indigo-500 rounded-lg"
+            className="bg-transparent p-3 text-lg my-2 border border-indigo-500 rounded-lg"
             type="text"
             placeholder="Name"
             ref={nameRef}
@@ -109,20 +109,21 @@ function AuthForm() {
         )}
         <input
           autoComplete="false"
-          className="bg-transparent py-2 px-2 my-2 border border-indigo-500 rounded-lg"
+          className="bg-transparent p-3 text-lg my-2 border border-indigo-500 rounded-lg"
           type="email"
           placeholder="Email"
           ref={emailRef}
         />
         <input
           autoComplete="false"
-          className="bg-transparent py-2 px-2 my-2 border border-indigo-500 rounded-lg"
+          className="bg-transparent p-3 text-lg my-2 border border-indigo-500 rounded-lg"
           type="password"
           placeholder="Password"
           ref={passwordRef}
+          
         />
         <button
-          className="bg-indigo-500 p-2 px-2 rounded-lg  my-4"
+          className="bg-indigo-500 p-3 text-lg rounded-lg my-4"
           type="submit"
         >
           {isLogin ? "Log In" : "Sign Up"}

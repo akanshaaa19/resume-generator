@@ -1,4 +1,14 @@
 .resume{
     /* width: 21cm; */
-    height:29.7cm
+    height:29.7cm;
+}
+p{
+    margin-bottom: 0;
+}
+
+@media print{
+    .resume{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
 }

@@ -1,11 +1,10 @@
-import React, { useContext, useRef } from "react";
+import React, { useRef } from "react";
 import { useHistory } from "react-router-dom";
 
 import { db } from "../../firebase";
-import { setDoc, doc, updateDoc } from "firebase/firestore";
+import { doc, updateDoc } from "firebase/firestore";
 
 import Question from "../UI/Question";
-import AuthContext from "../../store/auth-context";
 
 function WorkDetails() {
   const titleRef1 = useRef();
@@ -17,8 +16,6 @@ function WorkDetails() {
   const descRef2 = useRef();
 
   const history = useHistory();
-
-  const ctx = useContext(AuthContext);
 
   async function sendData(e) {
     e.preventDefault();

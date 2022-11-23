@@ -13,9 +13,9 @@ const Resume03 = React.forwardRef((props, ref) => {
           </div>
         </div>
         <div>
-          portfolio: {props.personalDetails.url} <br />
-          email: {props.personalDetails.email} <br />
-          phone #: {props.personalDetails.phone}
+          <span className="font-medium">portfolio:</span> {props.personalDetails.url} <br />
+          <span className="font-medium">email:</span> {props.personalDetails.email} <br />
+          <span className="font-medium">phone #:</span> {props.personalDetails.phone}
         </div>
       </div>
       <hr />
@@ -28,11 +28,11 @@ const Resume03 = React.forwardRef((props, ref) => {
       <div className="sec-3 mt-4">
         <div className="text-xl font-bold mb-2">SKILLS</div>
         <div>
-          <ul>
+          <div className="row">
             {props.skills.map((skill) => {
-              return <li>{skill}</li>;
+              return <div className="col-6">{skill}</div>;
             })}
-          </ul>
+          </div>
         </div>
       </div>
       <hr />

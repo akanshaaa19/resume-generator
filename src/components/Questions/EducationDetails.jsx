@@ -1,11 +1,10 @@
-import React, { useRef, useContext } from "react";
+import React, { useRef} from "react";
 import { useHistory } from "react-router-dom";
 
 import { db } from "../../firebase";
 import { doc, updateDoc } from "firebase/firestore";
 
 import Question from "../UI/Question";
-import AuthContext from "../../store/auth-context";
 
 function EducationDetails() {
   const degree1Ref = useRef();
@@ -20,7 +19,6 @@ function EducationDetails() {
 
   const history = useHistory();
 
-  const ctx = useContext(AuthContext);
 
   async function sendData(e) {
     e.preventDefault();

@@ -1,22 +1,25 @@
 import React, { useContext } from "react";
 import { Route, Redirect } from "react-router-dom";
 
+import AuthContext from "../../store/auth-context";
 
-import AuthContext from "../store/auth-context";
-
-import PersonalDetails from "../components/Questions/PersonalDetails";
-import EducationDetails from "../components/Questions/EducationDetails";
-import WorkDetails from "../components/Questions/WorkDetails";
-import SkillDetails from "../components/Questions/SkillDetails";
-import PdfDownload from "./pages/pdf";
-
+import PersonalDetails from "../Questions/PersonalDetails";
+import EducationDetails from "../Questions/EducationDetails";
+import WorkDetails from "../Questions/WorkDetails";
+import SkillDetails from "../Questions/SkillDetails";
+import PdfDownload from "./pdf";
+import Templates from "../UI/templates/Templates";
 
 function Home() {
-
-    const ctx = useContext(AuthContext)
+  const ctx = useContext(AuthContext);
   return (
     <div className="home flex flex-row right-0 fixed justify-around bottom-0">
       <div className="question-div">
+        <Route path="/edit/templates">
+          {ctx.isLoggedIn && <Templates />}
+          {!ctx.isLoggedIn && <Redirect to="/auth" />}
+        </Route>
+
         <Route path="/edit/personal">
           {ctx.isLoggedIn && <PersonalDetails />}
           {!ctx.isLoggedIn && <Redirect to="/auth" />}

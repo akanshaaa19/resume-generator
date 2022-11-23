@@ -52,10 +52,10 @@ function AuthForm() {
     let url;
     if (isLogin) {
       url =
-        "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDVtiboU4R5dn8SlxhkwwVzrZmsJ3W7l0Y";
+        "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBbVm9IrLsh0zGFVZVRKaOrWgCYRq2fXGE";
     } else {
       url =
-        "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDVtiboU4R5dn8SlxhkwwVzrZmsJ3W7l0Y";
+        "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyBbVm9IrLsh0zGFVZVRKaOrWgCYRq2fXGE";
     }
 
     fetch(url, {

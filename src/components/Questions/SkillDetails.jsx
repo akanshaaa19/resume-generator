@@ -2,7 +2,7 @@ import React, { useContext, useRef } from "react";
 import { useHistory } from "react-router-dom";
 
 import { db } from "../../firebase";
-import { setDoc, doc, updateDoc } from "firebase/firestore";
+import { doc, updateDoc } from "firebase/firestore";
 
 import Question from "../UI/Question";
 import AuthContext from "../../store/auth-context";
@@ -64,7 +64,7 @@ function SkillDetails() {
           <button
             onClick={sendData}
             className="px-4 py-2 mx-1 ml-16 bg-indigo-300"
-            type="submit" disabled
+            type="submit"
           >
             Next
           </button>

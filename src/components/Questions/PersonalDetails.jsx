@@ -1,11 +1,10 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useRef } from "react";
 import { useHistory } from "react-router-dom";
 
 import { db } from "../../firebase";
 import { doc, updateDoc } from "firebase/firestore";
 
 import Question from "../UI/Question";
-import AuthContext from "../../store/auth-context";
 
 function PersonalDetails() {
 
@@ -19,7 +18,6 @@ function PersonalDetails() {
 
   const history = useHistory();
 
-  const ctx = useContext(AuthContext);
 
   async function sendData(e) {
     e.preventDefault();
@@ -57,6 +55,7 @@ function PersonalDetails() {
                 type="text"
                 placeholder="Name"
                 inputRef={nameRef}
+                
               />
               <Question
                 required

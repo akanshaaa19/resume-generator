@@ -9,6 +9,14 @@ function MainNavigation() {
       {/* <div className="inline-flex flex-col fixed"> */}
       <aside className="fixed sidebar left-0 pt-5 flex justify-center border-r-2 border-gray-800 px-4">
         <ul>
+        <NavLink
+            to="/edit/templates"
+            className="hover:text-indigo-500"
+            activeClassName="active"
+          >
+            Templates
+          </NavLink>
+
           <NavLink
             to="/edit/personal"
             className="hover:text-indigo-500"

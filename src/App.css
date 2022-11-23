@@ -52,6 +52,10 @@ input:focus, textarea:focus{
   width: 10vw;
 }
 
+.resume p{
+  margin-bottom: 0;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -69,4 +73,19 @@ input:focus, textarea:focus{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #000000;
+}
+
+.phone{
+  display: none;
+}
+
+
+@media screen and (max-width: 748px) {
+  .App{
+    display: none;
+  }
+
+  .phone{
+    display: flex;
+  }
 }

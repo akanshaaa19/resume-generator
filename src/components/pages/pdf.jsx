@@ -33,6 +33,7 @@ function PdfDownload() {
     setWork(result.workDetails);
     setskill(result.skills);
   });
+  
 
   const [temp, setTemp] = useState('3');
 

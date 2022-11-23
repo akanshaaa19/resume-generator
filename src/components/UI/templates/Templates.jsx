@@ -5,6 +5,9 @@ import img2 from "../../../img/2.png";
 import img3 from "../../../img/3.png";
 
 function Templates() {
+
+  let template = '3';
+
   return (
     <div className="flex flex-col justify-center py-10">
       <h1 className="mb-16">Templates</h1>

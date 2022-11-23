@@ -109,14 +109,14 @@ function AuthForm() {
         )}
         <input
           autoComplete="false"
-          className="bg-transparent p-3 text-lg my-2 border border-indigo-500 rounded-lg"
+          className="bg-transparent p-3 text-lg my-2 border focus:border-indigo-500 rounded-lg"
           type="email"
           placeholder="Email"
           ref={emailRef}
         />
         <input
           autoComplete="false"
-          className="bg-transparent p-3 text-lg my-2 border border-indigo-500 rounded-lg"
+          className="bg-transparent p-3 text-lg my-2 border focus:border-indigo-500 rounded-lg"
           type="password"
           placeholder="Password"
           ref={passwordRef}
